@@ -31,6 +31,12 @@ export default function Login (props){
                 })
                 localStorage.removeItem('authToken')
             })
+        setCredentials({
+            username: '',
+            password: '',
+            isLoading: false,
+            error: ''
+        })
     }
     return (
         <div>
